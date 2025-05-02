@@ -1,0 +1,46 @@
+<table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8 ">
+
+  <ng-container matColumnDef="select">
+    <th mat-header-cell *matHeaderCellDef> <mat-checkbox disabled></mat-checkbox> </th>
+  </ng-container>
+
+  <ng-container matColumnDef="product">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Product </th>
+  </ng-container>
+
+  <ng-container matColumnDef="sku">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> SKU </th>
+  </ng-container>
+
+  <ng-container matColumnDef="category">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Category </th>
+  </ng-container>
+
+  <ng-container matColumnDef="brand">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Brand </th>
+  </ng-container>
+
+  <ng-container matColumnDef="price">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Price </th>
+  </ng-container>
+
+  <ng-container matColumnDef="unit">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Unit </th>
+  </ng-container>
+
+  <ng-container matColumnDef="qty">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Qty </th>
+  </ng-container>
+
+  <ng-container matColumnDef="createdBy">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Created By </th>
+
+  </ng-container>
+
+  <ng-container matColumnDef="action">
+    <th mat-header-cell *matHeaderCellDef> Action </th>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <!-- <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr> -->
+</table>
