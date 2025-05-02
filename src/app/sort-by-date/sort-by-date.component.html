@@ -1,0 +1,25 @@
+<!-- <button mat-button [matMenuTriggerFor]="sortMenu">
+    <mat-icon>tune</mat-icon>
+    <span>Sort by Date</span>
+    <mat-icon>arrow_drop_down</mat-icon>
+  </button>
+  
+  <mat-menu #sortMenu="matMenu">
+    <button mat-menu-item (click)="sort('asc')">Oldest First</button>
+    <button mat-menu-item (click)="sort('desc')">Newest First</button>
+  </mat-menu>
+   -->
+   <button mat-button [matMenuTriggerFor]="sortMenu" class="sort-btn">
+    <div class="sort-content">
+      <mat-icon class="left-icon">tune</mat-icon>
+      <span class="label">Sort by Date</span>
+      <mat-icon class="right-icon">arrow_drop_down</mat-icon>
+    </div>
+  </button>
+  
+  <mat-menu #sortMenu="matMenu">
+    <button mat-menu-item (click)="sort('asc')">Oldest First</button>
+    <button mat-menu-item (click)="sort('desc')">Newest First</button>
+  </mat-menu>
+  
+  
