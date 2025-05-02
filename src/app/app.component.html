@@ -21,15 +21,21 @@
   </div>
 </div>
 
+<div class="search-filter-sort">
+  <app-search-bar></app-search-bar>
+
+  <div class="funnel-sort">
+    <app-highlight-funnel></app-highlight-funnel>
+    <app-sort-by-date></app-sort-by-date>
+  </div>
+</div>
+
+<app-action-icons></app-action-icons>
 
 <app-image-label 
   [imageUrl]="'assets/laptop.jpg'" 
   [label]="'Lenovo 3rd Generation'">
 </app-image-label>
 
-
-<app-action-icons></app-action-icons>
 <app-highlight-settings></app-highlight-settings>
-<app-highlight-funnel></app-highlight-funnel>
-<app-search-bar></app-search-bar>
-<app-sort-by-date></app-sort-by-date>
+
