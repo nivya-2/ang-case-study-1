@@ -1,0 +1,19 @@
+.image-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .image-label img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+  }
+  
+  .image-label span {
+    font-size: 14px;
+    color: #333;
+  }
+  
