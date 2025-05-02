@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ImageLabelComponent } from './image-label/image-label.component';
 import { TitleSubtitleComponent } from './title-subtitle/title-subtitle.component';
@@ -13,13 +13,15 @@ import { ButtonComponent } from "./button/button.component";
 
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { SortByDateComponent } from './sort-by-date/sort-by-date.component';
+import { TableHeaderComponent} from './tableHeader/app-th.component';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, SearchBarComponent, SortByDateComponent,ButtonComponent,ImageLabelComponent,TitleSubtitleComponent,NavIconsComponent,ActionIconsComponent,HighlightFunnelComponent,HighlightSettingsComponent],
+  imports: [RouterOutlet,TableHeaderComponent, SearchBarComponent, SortByDateComponent,ButtonComponent,ImageLabelComponent,TitleSubtitleComponent,NavIconsComponent,ActionIconsComponent,HighlightFunnelComponent,HighlightSettingsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'casestudy';
+  title = 'caseStudy';
 }
