@@ -1,3 +1,21 @@
+.product-right-header{
+    display: flex;
+    padding: 16px;
+}
+
+.product-head{
+    display: flex;
+    justify-content: space-between  ;
+}
+.funnel-sort{
+    display: flex;
+
+}
+.search-filter-sort{
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+}
 
   
   ::ng-deep .mdc-checkbox__background{

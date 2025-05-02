@@ -21,7 +21,8 @@ export class TableHeaderComponent implements AfterViewInit {
      'select','product', 'sku', 'category', 'brand', 'price', 'unit', 'qty', 'createdBy', 'action'
   ];
 
-  
+ 
+
 
   dataSource = new MatTableDataSource(this.items);
 

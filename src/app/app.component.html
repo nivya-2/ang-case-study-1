@@ -1,46 +1,41 @@
-<table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8 ">
+<div class="product-head">
+  <app-title-subtitle 
+    [title]="'Product List'" 
+    [subtitle]="'Manage your products' ">
+  </app-title-subtitle>
+  <div class="product-right-header">
+    <app-nav-icons></app-nav-icons>
 
-  <ng-container matColumnDef="select">
-    <th mat-header-cell *matHeaderCellDef> <mat-checkbox disabled></mat-checkbox> </th>
-  </ng-container>
+    <app-button
+      text="Add New Product" 
+      icon="assets/add.png" 
+      [backgroundColor]="'#FF9B44'">
+    </app-button>
+    
+    <app-button 
+      text="Import Product" 
+      [backgroundColor]="'#1B2A47'"
+      icon="assets/download.png" 
+      >
+    </app-button>
+  </div>
+</div>
 
-  <ng-container matColumnDef="product">
-    <th mat-header-cell *matHeaderCellDef mat-sort-header> Product </th>
-  </ng-container>
+<div class="search-filter-sort">
+  <app-search-bar></app-search-bar>
 
-  <ng-container matColumnDef="sku">
-    <th mat-header-cell *matHeaderCellDef mat-sort-header> SKU </th>
-  </ng-container>
+  <div class="funnel-sort">
+    <app-highlight-funnel></app-highlight-funnel>
+    <app-sort-by-date></app-sort-by-date>
+  </div>
+</div>
 
-  <ng-container matColumnDef="category">
-    <th mat-header-cell *matHeaderCellDef mat-sort-header> Category </th>
-  </ng-container>
+<app-action-icons></app-action-icons>
 
-  <ng-container matColumnDef="brand">
-    <th mat-header-cell *matHeaderCellDef mat-sort-header> Brand </th>
-  </ng-container>
+<app-image-label 
+  [imageUrl]="'assets/laptop.jpg'" 
+  [label]="'Lenovo 3rd Generation'">
+</app-image-label>
 
-  <ng-container matColumnDef="price">
-    <th mat-header-cell *matHeaderCellDef mat-sort-header> Price </th>
-  </ng-container>
-
-  <ng-container matColumnDef="unit">
-    <th mat-header-cell *matHeaderCellDef mat-sort-header> Unit </th>
-  </ng-container>
-
-  <ng-container matColumnDef="qty">
-    <th mat-header-cell *matHeaderCellDef mat-sort-header> Qty </th>
-  </ng-container>
-
-  <ng-container matColumnDef="createdBy">
-    <th mat-header-cell *matHeaderCellDef mat-sort-header> Created By </th>
-
-  </ng-container>
-
-  <ng-container matColumnDef="action">
-    <th mat-header-cell *matHeaderCellDef> Action </th>
-  </ng-container>
-
-  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-  <!-- <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr> -->
-</table>
+<app-highlight-settings></app-highlight-settings>
+<app-th></app-th>
