@@ -1,9 +1,33 @@
+<div class="product-head">
+  <app-title-subtitle 
+    [title]="'Product List'" 
+    [subtitle]="'Manage your products' ">
+  </app-title-subtitle>
+  <div class="product-right-header">
+    <app-nav-icons></app-nav-icons>
+
+    <app-button
+      text="Add New Product" 
+      icon="assets/add.png" 
+      [backgroundColor]="'#FF9B44'">
+    </app-button>
+    
+    <app-button 
+      text="Import Product" 
+      [backgroundColor]="'#1B2A47'"
+      icon="assets/download.png" 
+      >
+    </app-button>
+  </div>
+</div>
+
+
 <app-image-label 
   [imageUrl]="'assets/laptop.jpg'" 
   [label]="'Lenovo 3rd Generation'">
 </app-image-label>
 
-<app-title-subtitle 
-  [title]="'Product List'" 
-  [subtitle]="'Manage your products' ">
-</app-title-subtitle>
+
+<app-action-icons></app-action-icons>
+<app-highlight-settings></app-highlight-settings>
+<app-highlight-funnel></app-highlight-funnel>
