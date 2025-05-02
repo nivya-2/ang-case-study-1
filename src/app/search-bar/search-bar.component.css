@@ -27,39 +27,3 @@
     pointer-events: none;
   }
 }
-
-
-/* .custom-search-bar {
-    width: 100%;
-    max-width: 400px;
-    padding: 8px 8px;
-  } */
-  /* .search-wrapper {
-    position: relative;
-    width: 100%;
-    max-width: 350px;
-  
-    input {
-      width: 100%;
-      padding: 10px 36px 10px 14px;
-      border: 1px solid #e5e7eb; 
-      border-radius: 9999px; 
-      background-color: #f9fafb; 
-      font-size: 14px;
-      outline: none;
-  
-      &:focus {
-        border-color: #cbd5e1; 
-      }
-    }
-  
-    .search-icon {
-      position: absolute;
-      right: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-      pointer-events: none;
-      color: #6b7280; 
-    }
-  }
-   */
