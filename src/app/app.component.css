@@ -7,3 +7,12 @@
     display: flex;
     justify-content: space-between  ;
 }
+.funnel-sort{
+    display: flex;
+
+}
+.search-filter-sort{
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+}

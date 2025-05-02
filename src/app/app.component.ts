@@ -11,10 +11,12 @@ import { ButtonComponent } from "./button/button.component";
 
 
 
+import { SearchBarComponent } from './search-bar/search-bar.component';
+import { SortByDateComponent } from './sort-by-date/sort-by-date.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,ButtonComponent,ImageLabelComponent,TitleSubtitleComponent,NavIconsComponent,ActionIconsComponent,HighlightFunnelComponent,HighlightSettingsComponent],
+  imports: [RouterOutlet, SearchBarComponent, SortByDateComponent,ButtonComponent,ImageLabelComponent,TitleSubtitleComponent,NavIconsComponent,ActionIconsComponent,HighlightFunnelComponent,HighlightSettingsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
