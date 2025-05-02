@@ -1,4 +1,20 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { ImageLabelComponent } from './image-label/image-label.component';
+import { TitleSubtitleComponent } from './title-subtitle/title-subtitle.component';
+import { HighlightFunnelComponent } from './highlight-funnel/highlight-funnel.component';
+import { HighlightSettingsComponent } from './highlight-settings/highlight-settings.component';
+import { ActionIconsComponent } from './action-icons/action-icons.component';
+import { NavIconsComponent } from './nav-icons/nav-icons.component';
+import { ButtonComponent } from "./button/button.component";
+
+
+
+
+import { SearchBarComponent } from './search-bar/search-bar.component';
+import { SortByDateComponent } from './sort-by-date/sort-by-date.component';
+import { TableHeaderComponent} from './tableHeader/app-th.component';
+
 import { CommonModule } from '@angular/common';
 import { MatTableModule } from '@angular/material/table';
 import { MatCheckboxModule } from '@angular/material/checkbox';
@@ -7,19 +23,18 @@ import { MatButtonModule } from '@angular/material/button';
 import { RowComponent } from './row/row.component';
 
 @Component({
-  imports: [ CommonModule, MatTableModule, MatCheckboxModule, MatIconModule, MatButtonModule, RowComponent
-  ],
   selector: 'app-root',
+  imports: [RouterOutlet,TableHeaderComponent, SearchBarComponent, SortByDateComponent,ButtonComponent,ImageLabelComponent,TitleSubtitleComponent,NavIconsComponent,ActionIconsComponent,HighlightFunnelComponent,HighlightSettingsComponent,CommonModule, MatTableModule, MatCheckboxModule, MatIconModule, MatButtonModule, RowComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'casestudy';
+  title = 'caseStudy';
 
   items = [
     {
       product: 'Lenovo 3rd Generation',
-      image: 'https://via.placeholder.com/40?text=L',
+      image: 'assets/laptop.jpg',
       sku: 'PT001',
       category: 'Laptop',
       brand: 'Lenovo',
@@ -27,13 +42,13 @@ export class AppComponent {
       unit: 'Pc',
       qty: '100',
       createdby: 'Arroon',
-      avatar: 'https://randomuser.me/api/portraits/men/32.jpg',
+      avatar: 'assets/arroonn.avif',
       action: 'Edit',
       selected: false,
     },
     {
       product: 'Bold V3.2',
-      image: 'https://via.placeholder.com/40?text=B',
+      image: 'assets/earphone.jpg',
       sku: 'PT002',
       category: 'Electronics',
       brand: 'Bolt',
@@ -41,13 +56,13 @@ export class AppComponent {
       unit: 'Pc',
       qty: '140',
       createdby: 'Kenneth',
-      avatar: 'https://randomuser.me/api/portraits/men/45.jpg',
+      avatar: 'assets/kenneth.jpg',
       action: 'Edit',
       selected: false,
     },
     {
       product: 'Nike Jordan',
-      image: 'https://via.placeholder.com/40?text=N',
+      image: 'assets/shoes.jpg',
       sku: 'PT003',
       category: 'Shoe',
       brand: 'Nike',
@@ -55,22 +70,10 @@ export class AppComponent {
       unit: 'Pc',
       qty: '780',
       createdby: 'Gooch',
-      avatar: 'https://randomuser.me/api/portraits/men/60.jpg',
+      avatar: 'assets/gooch.jpg',
       action: 'Edit',
       selected: false,
     }
   ];  
-  displayedColumns: string[] = [
-    'select',
-    'product',
-    'sku',
-    'category',
-    'brand',
-    'price',
-    'unit',
-    'qty',
-    'createdby',
-    'action'
-  ];
-
+ 
 }

@@ -1,0 +1,16 @@
+.custom-button {
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size:larger;
+    border-radius: 4px;
+    margin-left: 10px;
+  }
+  
+  
+  .button-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+ }
+  

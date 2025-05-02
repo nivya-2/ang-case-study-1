@@ -1,52 +1,36 @@
-<table mat-table [dataSource]="items" class="mat-elevation-z1 styled-table">
+<div class="product-head">
+  <app-title-subtitle 
+    [title]="'Product List'" 
+    [subtitle]="'Manage your products' ">
+  </app-title-subtitle>
+  <div class="product-right-header">
+    <app-nav-icons></app-nav-icons>
 
-  <!-- Define all columns -->
-  <ng-container matColumnDef="select">
-    <th mat-header-cell *matHeaderCellDef><mat-checkbox disabled></mat-checkbox></th>
-  </ng-container>
+    <app-button
+      text="Add New Product" 
+      icon="assets/add.png" 
+      [backgroundColor]="'#FF9B44'">
+    </app-button>
+    
+    <app-button 
+      text="Import Product" 
+      [backgroundColor]="'#1B2A47'"
+      icon="assets/download.png" 
+      >
+    </app-button>
+  </div>
+</div>
 
-  <ng-container matColumnDef="product">
-    <th mat-header-cell *matHeaderCellDef>Product</th>
-  </ng-container>
+<div class="search-filter-sort">
+  <app-search-bar></app-search-bar>
 
-  <ng-container matColumnDef="sku">
-    <th mat-header-cell *matHeaderCellDef>SKU</th>
-  </ng-container>
+  <div class="funnel-sort">
+    <app-highlight-funnel></app-highlight-funnel>
+    <app-sort-by-date></app-sort-by-date>
+  </div>
+</div>
+<div class="hello">
+  <app-th  [items]="items"></app-th>
+</div>
 
-  <ng-container matColumnDef="category">
-    <th mat-header-cell *matHeaderCellDef>Category</th>
-  </ng-container>
-
-  <ng-container matColumnDef="brand">
-    <th mat-header-cell *matHeaderCellDef>Brand</th>
-  </ng-container>
-
-  <ng-container matColumnDef="price">
-    <th mat-header-cell *matHeaderCellDef>Price</th>
-  </ng-container>
-
-  <ng-container matColumnDef="unit">
-    <th mat-header-cell *matHeaderCellDef>Unit</th>
-  </ng-container>
-
-  <ng-container matColumnDef="qty">
-    <th mat-header-cell *matHeaderCellDef>Qty</th>
-  </ng-container>
-
-  <ng-container matColumnDef="createdby">
-    <th mat-header-cell *matHeaderCellDef>Created by</th>
-  </ng-container>
-
-  <ng-container matColumnDef="action">
-    <th mat-header-cell *matHeaderCellDef>Action</th>
-  </ng-container>
-
-  <!-- Header Row -->
-  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-
-  <!-- Row Component -->
-  <ng-container *ngFor="let item of items">
-    <app-row [rowData]="item"></app-row>
-  </ng-container>
-
-</table>
+  
