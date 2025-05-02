@@ -1,0 +1,26 @@
+<tr mat-row>
+    <td mat-cell><mat-checkbox disabled></mat-checkbox></td>
+    <td mat-cell>
+      <div class="product-cell">
+        <img class="product-img" [src]="rowData.image" />
+        <span>{{ rowData.product }}</span>
+      </div>
+    </td>
+    <td mat-cell>{{ rowData.sku }}</td>
+    <td mat-cell>{{ rowData.category }}</td>
+    <td mat-cell>{{ rowData.brand }}</td>
+    <td mat-cell>${{ rowData.price }}</td>
+    <td mat-cell>{{ rowData.unit }}</td>
+    <td mat-cell>{{ rowData.qty }}</td>
+    <td mat-cell>
+      <div class="creator-cell">
+        <img class="avatar" [src]="rowData.avatar" />
+        <span>{{ rowData.createdby }}</span>
+      </div>
+    </td>
+    <td mat-cell>
+      <button mat-icon-button color="primary"><mat-icon>visibility</mat-icon></button>
+      <button mat-icon-button color="warn"><mat-icon>delete</mat-icon></button>
+    </td>
+  </tr>
+  
