@@ -43,4 +43,9 @@
 
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <!-- <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr> -->
+
+  <!-- Row Component -->
+  <ng-container *ngFor="let item of items">
+    <app-row [rowData]="item"></app-row>
+  </ng-container>
 </table>

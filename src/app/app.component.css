@@ -41,5 +41,12 @@
   ::ng-deep .mat-sort-header-arrow svg{
     display: none;
   }
+  ::ng-deep .mat-mdc-table{
+    background-color: none !important;
+  }
 
+.hello{
+  background-color: white;
+  border-radius: 5%;
+}
 
