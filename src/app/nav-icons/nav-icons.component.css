@@ -1,0 +1,5 @@
+.nav-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 0.8vw;
+}
