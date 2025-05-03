@@ -11,6 +11,7 @@ import { ButtonComponent } from "./button/button.component";
 
 
 
+
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { SortByDateComponent } from './sort-by-date/sort-by-date.component';
 import { TableHeaderComponent} from './tableHeader/app-th.component';
@@ -21,6 +22,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { RowComponent } from './row/row.component';
+
 
 @Component({
   selector: 'app-root',

@@ -19,9 +19,14 @@ import { RowComponent } from "../row/row.component";
 export class TableHeaderComponent implements OnInit{
   title = 'caseStudy';
 
-  displayedColumns: string[] = [
-     'select','product', 'sku', 'category', 'brand', 'price', 'unit', 'qty', 'createdBy', 'action'
-  ];
+ 
+ columns:string[] = [
+   'product', 'sku', 'category', 'brand', 'price', 'unit', 'qty', 'createdBy'
+];
+displayedColumns: string[] = [
+  'select',...this.columns ,'action'
+];
+
 
   @Input() items: any[] = [];
 
