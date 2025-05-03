@@ -15,38 +15,16 @@
     display: flex;
     padding: 16px;
     justify-content: space-between;
+    border-bottom: solid 1px grey;
 }
 
-  
-  ::ng-deep .mdc-checkbox__background{
-    border-color: #d3d3d3 !important;
-    border-radius: 5px !important;
-  }
 
-
-::ng-deep .mat-sort-header-arrow {
-     background-image: url('/assets/sort.svg') !important;
-     background-size: 16px 16px;
-     padding: 5px;
-     opacity: 1 !important;
-     transform: rotate(0deg) !important;
-     background-repeat: no-repeat;
-     background-size: contain;
-     opacity: 0.6;
- 
-  }
-  ::ng-deep .mat-sort-header-sorted .mat-sort-header-arrow {
-    opacity: 0.6 !important;
-  }
-  ::ng-deep .mat-sort-header-arrow svg{
-    display: none;
-  }
-  ::ng-deep .mat-mdc-table{
-    background-color: none !important;
-  }
-
-.hello{
+.content{
+  margin: 10px;
   background-color: white;
-  border-radius: 5%;
+  border-radius: 1%;
+  border:solid 1px;
+  border-color: grey;
+  padding: 5px;
 }
 
