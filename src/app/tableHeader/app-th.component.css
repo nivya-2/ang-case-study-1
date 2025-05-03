@@ -24,4 +24,6 @@
     display: none;
   }
 
-
+  ::ng-deep .mat-mdc-table{
+    background-color: white !important;
+  }

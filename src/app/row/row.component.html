@@ -1,14 +1,14 @@
 <tr mat-row>
-    <td mat-cell><mat-checkbox disabled></mat-checkbox></td>
+    <td mat-cell style="padding-left: 1.2vw;"><mat-checkbox disabled></mat-checkbox></td>
     <td mat-cell>
       <app-image-label [imageUrl]='rowData.image' [label]='rowData.product'></app-image-label>
     </td>
-    <td mat-cell>{{ rowData.sku }}</td>
-    <td mat-cell>{{ rowData.category }}</td>
-    <td mat-cell>{{ rowData.brand }}</td>
-    <td mat-cell>${{ rowData.price }}</td>
-    <td mat-cell>{{ rowData.unit }}</td>
-    <td mat-cell>{{ rowData.qty }}</td>
+    <td mat-cell class="align ">{{ rowData.sku }}</td>
+    <td mat-cell class="align">{{ rowData.category }}</td>
+    <td mat-cell class="align">{{ rowData.brand }}</td>
+    <td mat-cell class="align">{{ rowData.price }}</td>
+    <td mat-cell class="align">{{ rowData.unit }}</td>
+    <td mat-cell class="align">{{ rowData.qty }}</td>
     <td mat-cell>
       <app-image-label [imageUrl]="rowData.avatar" [label]="rowData.createdby"></app-image-label>
     </td>
